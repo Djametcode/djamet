@@ -36,7 +36,7 @@ const Main = () => {
                     <h3>Whatsapp Clone</h3>
                 </div>
                 <div className=" bg-slate-300/60 rounded-lg text-black/40 p-2 h-full font-jost text-lg text-center">
-                   <div className=" bg-wa backdrop-grayscale h-80 bg-cover rounded-xl">
+                   <div className=" bg-wa backdrop-grayscale h-80 bg-cover rounded-xl relative z-10">
 
                     </div><br />
                     <p>Just a simple whatsapp clone, using HTML and css only, probably gonna rework it later</p><br />

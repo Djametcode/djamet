@@ -30,7 +30,7 @@ const Header = () => {
     }
 
     return (
-        <div className=" bg-polygon font-jost text-white sticky top-0">
+        <div className=" bg-polygon font-jost text-white sticky top-0 z-20">
             <h1 className=" text-3xl p-4 text-center">{title}</h1>
 
             {nav && (
