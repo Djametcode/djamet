@@ -10,14 +10,14 @@ module.exports = {
         jost: ['Jost', 'sans-serif']
       },
       backgroundImage: {
-        'bg': "url('./src/image/bg.svg')",
+        'bg': "url('./image/bg.svg')",
         'polygon': "url('./src/image/polygon-scatter-haikei.svg')",
-        'blob': "url('./src/image/blob-haikei.svg')",
+        'blob': "url('./image/blob-haikei.svg')",
         'scatter': "url('./src/image/circle-scatter-haikei.svg')",
-        'books': "url('./src/image/books.png')",
+        'books': "url('./image/books.png')",
         'wa': "url('./src/image/wa.png')",
         'spotipeq': "url('./src/image/spotipeq.png')",
-        'todo': "url('./src/image/todos.png')",
+        'todo': "url('./image/todos.png')",
 
       }
     },
