@@ -6,10 +6,9 @@ export const ContextApp = createContext(null)
 
 const App = () => {
   const [title, setTitle] = useState('Djamet Coder');
-
   return (
     <ContextApp.Provider value={{title, setTitle}}>
-      <div>
+      <div className=" sm:hidden">
         <Header />
         <Main />
       </div>
