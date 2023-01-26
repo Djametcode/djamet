@@ -4,16 +4,16 @@ const Main = () => {
     const [name, setName] = useState('Tofik Hidayat')
     return (
         <div>
-            <div className=" bg-polygon bg-cover bg-no-repeat font-jost text-slate-300 flex overflow-auto gap-3 h-72">
-                <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4 w-full">
+            <div className=" bg-polygon bg-cover bg-no-repeat font-jost text-slate-300 flex gap-3 h-72 overflow-x-scroll snap-x snap-mandatory">
+                <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4 w-full snap-center snap-always">
                     <p className=" text-5xl w-80">Hello ... </p>
                     <p className=" text-l">I am {name} Front End Developer</p>
                 </div>
-                <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4">
+                <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4 snap-center snap-always">
                     <p className=" text-5xl w-72">Design</p>
                     <p className=" text-l"><q>I will design website by your request</q></p>
                 </div>
-                <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4">
+                <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4 snap-center snap-always">
                     <p className=" text-5xl w-72">React Js</p>
                     <p className=" text-l">Fully built with React Js also Vite FrameWork</p>
                 </div>
