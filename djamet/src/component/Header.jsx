@@ -1,16 +1,34 @@
 import React, { useContext, useRef, useState } from "react";
 import { ContextApp } from "../App";
 
+const Beranda = () => {
+    return (
+        <a href="#">Beranda</a>
+    )
+}
+
+const Project = () => {
+    return (
+        <a href="#">MyProject</a>
+    )
+}
+
+const Contact = () => {
+    return (
+        <a href="www.instagram.com/hidayattofik_">Contact Me</a>
+    )
+}
+
 const NavList = ({data}) => {
     return (
         <li className=" w-full text-center">
-            <a className=" block p-3" href="#">{data}</a>
+            {data}
         </li>
     )
 }
 
-const Navbar = ({data}) => {
-    const result = data.map((item) => <NavList key={item} data = {item}/>)
+const Navbar = ({data, id}) => {
+    const result = data.map((item) => <NavList key={id.id} data = {item}/>)
     return (
         <div className=" list-none flex justify-around">
             {result}
@@ -21,7 +39,7 @@ const Navbar = ({data}) => {
 const Header = () => {
     const {title} = useContext(ContextApp);
     const [nav, toggleNav] = useState(false);
-    const item = ['Beranda', 'My Project', 'Contact Me']
+    const item = [<Beranda />, <Project />, <Contact />]
     const InputRef = useRef(null);
 
     const handleInput = () => {
@@ -29,12 +47,24 @@ const Header = () => {
         status === true ? toggleNav(true) : toggleNav(false)
     }
 
+    const data = [
+        {
+            id: 0
+        },
+        {
+            id: 1
+        },
+        {
+            id: 2
+        },
+    ]
+
     return (
         <div className=" bg-polygon font-jost text-white sticky top-0 z-20">
             <h1 className=" text-3xl p-4 text-center">{title}</h1>
 
             {nav && (
-                <Navbar data = {item}/>
+                <Navbar data = {item} id = {data}/>
             )}
             <div>
                 <input 
