@@ -15,24 +15,24 @@ const Project = () => {
 
 const Contact = () => {
     return (
-        <a href="www.instagram.com/hidayattofik_">Contact Me</a>
+        <a href="#_">Contact Me</a>
     )
 }
 
-const NavList = ({data}) => {
+const NavList = ({data, id}) => {
     return (
-        <li className=" w-full text-center">
+        <li key={id.id} className=" w-full text-center">
             {data}
         </li>
     )
 }
 
 const Navbar = ({data, id}) => {
-    const result = data.map((item) => <NavList key={id.id} data = {item}/>)
+    const result = data.map((item) => <NavList key={item} data = {item} id = {id}/>)
     return (
-        <div className=" list-none flex justify-around">
+        <ul className=" list-none flex justify-around">
             {result}
-        </div>
+        </ul>
     )
 }
 
