@@ -3,25 +3,25 @@ import { ContextApp } from "../App";
 
 const Beranda = () => {
     return (
-        <a href="#">Beranda</a>
+        <a className=" p-2 w-full" href="#">Beranda</a>
     )
 }
 
 const Project = () => {
     return (
-        <a href="#">MyProject</a>
+        <a className=" p-2 w-full" href="#">MyProject</a>
     )
 }
 
 const Contact = () => {
     return (
-        <a href="#_">Contact Me</a>
+        <a className=" p-2" href="#">Contact Me</a>
     )
 }
 
-const NavList = ({data, id}) => {
+const NavList = ({data}) => {
     return (
-        <li key={id.id} className=" w-full text-center">
+        <li className=" text-center">
             {data}
         </li>
     )
