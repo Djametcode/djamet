@@ -41,7 +41,7 @@ const Main = () => {
             <div className=" bg-polygon bg-cover font-jost p-3 text-xl text-white text-center">
                 <h2>My Project</h2>
             </div>
-            <div className=" bg-scatter p-3 h-full bg-cover flex flex-col gap-4">
+            <div className=" bg-scatter bg-fixed p-3 h-full bg-cover flex flex-col gap-4">
                 <div className=" bg-slate-300/60 text-black/40 p-3 rounded-xl text-center font-jost text-xl">
                     <h3>Books Manager With Local storage</h3>
                 </div>
