@@ -18,8 +18,8 @@ module.exports = {
         'wa': "url('./image/wa.png')",
         'spotipeq': "url('./image/spotipeq.png')",
         'todo': "url('./image/todos.png')",
-
-      }
+        'profile': "url('./image/profile.jpg')",
+      },
     },
   },
   plugins: [],

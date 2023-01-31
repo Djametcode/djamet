@@ -1,45 +1,44 @@
 import React, { useContext, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { ContextApp } from "../App";
 
 const Beranda = () => {
     return (
-        <a className=" p-2 w-full" href="#">Beranda</a>
+        <div className=" w-full m-0 bg-slate-600/30 rounded-lg">
+            <Link className=" block p-3" to={'/'}>Beranda </Link>
+        </div>
     )
 }
 
 const Project = () => {
     return (
-        <a className=" p-2 w-full" href="#">MyProject</a>
+        <div className=" w-full m-0 bg-slate-600/30 rounded-lg">
+            <Link className=" block p-3" to={'/project'}>Project </Link>
+        </div> 
     )
 }
 
 const Contact = () => {
     return (
-        <a className=" p-2" href="#">Contact Me</a>
+        <div className=" w-full m-0 bg-slate-600/30 rounded-lg">
+            <Link className=" block p-3" to={'/contact'}>Contact Me </Link>
+        </div>
     )
 }
 
-const NavList = ({data}) => {
+export const Navbar = () => {
     return (
-        <li className=" text-center">
-            {data}
-        </li>
-    )
-}
-
-const Navbar = ({data, id}) => {
-    const result = data.map((item) => <NavList key={item} data = {item} id = {id}/>)
-    return (
-        <ul className=" list-none flex justify-around">
-            {result}
-        </ul>
+        <div className="ml-2 mr-2 flex flex-row gap-2 justify-center text-center font-jost">
+            <Beranda />
+            <Project />
+            <Contact />
+        </div>
     )
 }
 
 const Header = () => {
     const {title} = useContext(ContextApp);
     const [nav, toggleNav] = useState(false);
-    const item = [<Beranda />, <Project />, <Contact />]
     const InputRef = useRef(null);
 
     const handleInput = () => {
@@ -47,24 +46,12 @@ const Header = () => {
         status === true ? toggleNav(true) : toggleNav(false)
     }
 
-    const data = [
-        {
-            id: 0
-        },
-        {
-            id: 1
-        },
-        {
-            id: 2
-        },
-    ]
-
     return (
-        <div className=" bg-polygon font-jost text-white sticky top-0 z-20">
+        <div className=" bg-polygon font-jost text-white/30 sticky top-0 z-20">
             <h1 className=" text-3xl p-4 text-center">{title}</h1>
 
             {nav && (
-                <Navbar data = {item} id = {data}/>
+                <Navbar />
             )}
             <div>
                 <input 

@@ -1,8 +1,9 @@
 import React, { createContext, createRef, useRef, useState } from "react";
+import { HashRouter } from "react-router-dom";
 import Header from "./component/Header";
 import Main from "./component/Main";
 
-export const ContextApp = createContext(null)
+export const ContextApp = createContext(HashRouter)
 
 const App = () => {
   const [title, setTitle] = useState('Djamet Coder');
