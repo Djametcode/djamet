@@ -28,7 +28,7 @@ const Contact = () => {
 
 export const Navbar = () => {
     return (
-        <div className="ml-2 mr-2 flex flex-row gap-2 justify-center text-center font-jost">
+        <div className="ml-2 mr-2 flex flex-row gap-2 justify-center text-center font-jost pb-2">
             <Beranda />
             <Project />
             <Contact />

@@ -10,7 +10,7 @@ const List = () => {
 
 const Project = () => {
     return (
-        <div>
+        <div className=" sm:hidden">
             <HeaderProject />
             <List />
         </div>   

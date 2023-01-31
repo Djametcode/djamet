@@ -10,7 +10,7 @@ const Contact = () => {
         status === true ? toggleNav(true) : toggleNav(false)
     }
     return (
-        <div className=" bg-polygon h-max text-white/30 font-jost p-4">
+        <div className=" bg-polygon h-max text-white/30 font-jost p-4 sm:hidden">
             <h1 className=" text-center text-4xl mb-3">My Contact Card</h1>
             {nav && (
                 <Navbar />
