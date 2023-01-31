@@ -1,7 +1,7 @@
 import ProjectList from "./projectlist";
 import Slider from "./slider";
 
-export default function MainContent({name}) {
+export default function MainContent() {
     return (
         <div>
             <Slider />
