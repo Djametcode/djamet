@@ -2,7 +2,7 @@ import React from "react";
 
 const Slider = () => {
     return (
-        <div className=" bg-polygon font-jost text-slate-300 flex gap-3 h-64 overflow-auto snap-x snap-mandatory">
+        <div className=" bg-polygon font-jost text-slate-300 flex gap-3 h-64 overflow-auto snap-x snap-mandatory m-0">
             <div className=" ml-4 mt-4 mb-6 bg-slate-300/60 rounded-lg text-black/40 pl-4 pt-4 w-full snap-center snap-always hover:bg-black/40 hover:text-white/70">
                 <p className=" text-5xl w-80">Hello ... </p>
                 <p className=" text-l">I am {name} Front End Developer</p>

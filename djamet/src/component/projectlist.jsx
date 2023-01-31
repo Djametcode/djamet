@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectList = () => {
     return (
-    <div className=" bg-polygon bg-fixed top-0 p-3 h-full bg-cover flex flex-col gap-4">
+    <div className=" bg-polygon bg-fixed top-0 p-3 h-full bg-cover flex flex-col gap-4 m-0">
         <div className=" bg-slate-300/30 text-white/40 p-3 rounded-xl text-center font-jost text-xl">
             <h3>Books Manager With Local storage</h3>
         </div>
