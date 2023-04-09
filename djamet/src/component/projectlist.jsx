@@ -8,11 +8,9 @@ const ProjectList = () => {
   const scrollEffect = () => {
     const position = window.scrollY;
     console.log(position);
-    if (position >= 20) {
+    if (position >= 100) {
       setContent1(0);
-    } else if (position >= 200) {
       setContent2(0);
-    } else if (position >= 400) {
       setContent3(0);
     } else {
       setContent1(-500);
