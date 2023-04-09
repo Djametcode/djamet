@@ -1,20 +1,22 @@
-import React from "react"
-import HeaderProject from "./headerProject"
-import ProjectList from "./projectlist"
+import React, { useState } from "react";
+import HeaderProject from "./headerProject";
+import ProjectList from "./projectlist";
+import Header from "./Header";
+import Sidebar from "./sidebar";
 
 const List = () => {
-    return (
-        <ProjectList />
-    )
-}
+  return <ProjectList />;
+};
 
 const Project = () => {
-    return (
-        <div className=" sm:hidden">
-            <HeaderProject />
-            <List />
-        </div>   
-    )
-}
+  const [toggle, setToggle] = useState(false);
+  return (
+    <div className=" sm:hidden">
+      {toggle && <Sidebar setToggle={setToggle} />}
+      <Header setToggle={setToggle} />
+      <List />
+    </div>
+  );
+};
 
-export default Project
+export default Project;

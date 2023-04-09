@@ -1,21 +1,23 @@
-import React, { createContext, createRef, useRef, useState } from "react";
-import { HashRouter } from "react-router-dom";
+import React, { useState } from "react";
 import Header from "./component/Header";
 import Main from "./component/Main";
+import Sidebar from "./component/sidebar";
 
-export const ContextApp = createContext(HashRouter)
-
-const App = () => {
-  const [title, setTitle] = useState('Djamet Coder');
+const MyPortofolio = () => {
+  const [toggle, setToggle] = useState(false);
   return (
-    <ContextApp.Provider value={{title, setTitle}}>
-      <div className=" sm:hidden">
-        <Header />
+    <div>
+      {toggle && <Sidebar setToggle={setToggle} />}
+      <Header setToggle={setToggle} />
+      <div>
         <Main />
       </div>
-  </ContextApp.Provider>
-  )
- 
-}
+    </div>
+  );
+};
+
+const App = () => {
+  return <MyPortofolio />;
+};
 
 export default App;
