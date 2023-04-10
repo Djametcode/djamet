@@ -6,21 +6,31 @@ const Sidebar = ({ setToggle }) => {
     setToggle(false);
   };
   return (
-    <div className=" bg-gray-800 fixed top-0 z-30 w-72 p-3 rounded-tr-3xl rounded-br-3xl h-screen">
+    <div className=" bg-polygon bg-scroll fixed top-0 w-72 p-3 rounded-tr-3xl rounded-br-3xl h-screen z-30">
       {/* <div className=" flex justify-start p-2">
         <div className=" bg-profile w-16 h-16 rounded-full bg-cover"></div>
       </div> */}
       <div className=" flex justify-start text-lg">
-        <div className=" flex font-jost flex-col text-white/80 p-3">
-          <Link className=" underline underline-offset-4 p-2" to="/">
+        <div className=" flex font-jost flex-col gap-2 text-white/80 p-3">
+          <Link className=" bg-slate-600 rounded-xl text-center p-2" to="/">
             Beranda
           </Link>
-          <Link to="/project" className=" underline underline-offset-4 p-2">
+          <Link
+            to="/project"
+            className=" bg-slate-600 rounded-xl text-center p-2"
+          >
             My Project
           </Link>
-          <Link className=" underline underline-offset-4 p-2" to="/contact">
+          <Link
+            className=" bg-slate-600 rounded-xl text-center p-2"
+            to="/contact"
+          >
             Contact Me
           </Link>
+        </div>
+        <div className=" font-jost text-white absolute bottom-2">
+          <p>Copyright &copy: 2023</p>
+          <p className=" text-sm">Made By DjametCoder</p>
         </div>
       </div>
       <div

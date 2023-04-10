@@ -84,7 +84,12 @@ const Header = ({ setToggle }) => {
     const isStart = index === 0;
     const newIndex = isStart ? index + 1 : 0;
     setIndex(newIndex);
-    setToggle(true);
+
+    if (isStart) {
+      setToggle(true);
+    } else {
+      setToggle(false);
+    }
   };
 
   return (
@@ -94,7 +99,7 @@ const Header = ({ setToggle }) => {
       </div>
       <div
         onClick={changeIcon}
-        className=" flex flex-col justify-center -translate-x-6 cursor-pointer fill-current"
+        className=" flex flex-col justify-center -translate-x-6 cursor-pointer fill-current z-40"
       >
         <div>{icon[index].icons}</div>
       </div>
