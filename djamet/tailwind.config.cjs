@@ -17,6 +17,8 @@ module.exports = {
         todo: "url('./image/todos.png')",
         profile: "url('./image/profile.jpg')",
         dstore: "url('./image/Jepretan Layar 2566-04-10 pukul 14.34.59.png')",
+        postingAja:
+          "url('./image/Jepretan Layar 2566-04-10 pukul 14.43.11.png')",
       },
     },
   },

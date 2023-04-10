@@ -5,6 +5,8 @@ const ProjectList = () => {
   const [content2, setContent2] = useState(-500);
   const [content3, setContent3] = useState(-500);
   const [content4, setContent4] = useState(-500);
+  const [content5, setContent5] = useState(-500);
+  const [content6, setContent6] = useState(-500);
 
   const scrollEffect = () => {
     const position = window.scrollY;
@@ -21,6 +23,12 @@ const ProjectList = () => {
     }
     if (position >= 1300) {
       setContent4(0);
+    }
+    if (position >= 2000) {
+      setContent5(0);
+    }
+    if (position >= 2700) {
+      setContent6(0);
     }
   };
   window.addEventListener("scroll", scrollEffect);
@@ -117,7 +125,7 @@ const ProjectList = () => {
         </div>
       </div>
       <div
-        style={{ transform: `translate(${content4}px)` }}
+        style={{ transform: `translate(${content5}px)` }}
         className=" flex flex-col gap-3 transition-all"
       >
         <div className=" bg-slate-300/30 text-white/40 p-3 rounded-xl text-center font-jost text-xl">
@@ -137,19 +145,19 @@ const ProjectList = () => {
         </div>
       </div>
       <div
-        style={{ transform: `translate(${content4}px)` }}
+        style={{ transform: `translate(${content6}px)` }}
         className=" flex flex-col gap-3 transition-all"
       >
         <div className=" bg-slate-300/30 text-white/40 p-3 rounded-xl text-center font-jost text-xl">
-          <h3>Todo Apps</h3>
+          <h3>Posting Aja Dulu</h3>
         </div>
         <div className=" bg-slate-300/30 rounded-lg text-white/40 p-4 h-full font-jost text-lg text-center">
-          <div className=" bg-todo opacity-80 h-80 bg-cover rounded-xl"></div>
+          <div className=" bg-postingAja opacity-80 h-80 bg-cover rounded-xl"></div>
           <br />
-          <p>Made with React JS and Vite, simple app tho</p>
+          <p>I made my own social media</p>
           <br />
           <a
-            href="https://todosheros.netlify.app/"
+            href="https://mongolearn-taskapp.vercel.app/"
             className=" text-left text-white flex justify-center bg-slate-200/30 rounded-lg"
           >
             Link Click Me
