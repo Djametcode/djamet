@@ -27,7 +27,7 @@ const ContactCard = () => {
     return <ul className=" flex flex-row flex-wrap gap-2 w-full">{result}</ul>;
   };
   return (
-    <div className=" flex flex-col gap-4 m-2">
+    <div className=" h-screen flex flex-col gap-4 m-2">
       <div className=" flex justify-center flex-row">
         <div className=" bg-profile w-24 h-24 bg-cover rounded-full mt-5"></div>
       </div>
