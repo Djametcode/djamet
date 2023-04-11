@@ -92,8 +92,21 @@ const Header = ({ setToggle }) => {
     }
   };
 
+  const [headerBg, setBg] = useState("");
+  const changeBg = () => {
+    const position = window.scrollY;
+    if (position >= 20) {
+      setBg("slateGrey");
+    } else {
+      setBg("");
+    }
+  };
+  window.addEventListener("scroll", changeBg);
   return (
-    <div className=" bg-transparent font-jost text-black sticky p-1 top-0 z-20 flex justify-around">
+    <div
+      style={{ backgroundColor: `${headerBg}` }}
+      className=" font-jost text-black p-1 z-20 flex justify-around"
+    >
       <div
         onClick={changeIcon}
         className=" flex flex-col justify-center cursor-pointer fill-current z-40"
@@ -104,7 +117,10 @@ const Header = ({ setToggle }) => {
         <h1 className=" text-2xl p-4 text-center">Djamet Coder</h1>
       </div>
       <div className=" flex flex-col justify-center text-xl">
-        <a className=" bg-slate-600 p-2 rounded-xl text-slate-500" href="#">
+        <a
+          className=" bg-slate-600 p-2 rounded-xl text-white font-jost"
+          href="#"
+        >
           Contact Me
         </a>
       </div>

@@ -10,9 +10,9 @@ const MyPortofolio = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <div className=" bg-slate-200 w-screen relative">
+      <div className=" bg-slate-200 w-screen relative pt-20">
         {toggle && <Sidebar setToggle={setToggle} />}
-        <div className=" sticky top-0">
+        <div className=" fixed z-30 top-0 w-screen transition-opacity">
           <Header setToggle={setToggle} />
         </div>
         <div className=" bg-bgcover bg-no-repeat bg-center flex justify-center">

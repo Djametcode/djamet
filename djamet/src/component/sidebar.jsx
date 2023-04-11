@@ -6,7 +6,7 @@ const Sidebar = ({ setToggle }) => {
     setToggle(false);
   };
   return (
-    <div className=" bg-polygon bg-scroll fixed top-0 w-72 p-3 rounded-tr-3xl rounded-br-3xl h-screen z-30">
+    <div className=" bg-slate-100 bg-scroll fixed top-0 w-72 p-3 rounded-tr-3xl rounded-br-3xl h-screen z-50">
       {/* <div className=" flex justify-start p-2">
         <div className=" bg-profile w-16 h-16 rounded-full bg-cover"></div>
       </div> */}
@@ -28,7 +28,7 @@ const Sidebar = ({ setToggle }) => {
             Contact Me
           </Link>
         </div>
-        <div className=" font-jost text-white absolute bottom-2">
+        <div className=" font-comic text-black absolute bottom-2">
           <p>Copyright &copy: 2023</p>
           <p className=" text-sm">Made By DjametCoder</p>
         </div>
@@ -39,7 +39,7 @@ const Sidebar = ({ setToggle }) => {
       >
         <svg
           className=" w-8 h-8"
-          fill="white"
+          fill="black"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
