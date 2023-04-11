@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const LatestProject = () => {
   const icons = [
     {
@@ -18,6 +20,34 @@ const LatestProject = () => {
       ),
     },
   ];
+
+  const [content1, setContent1] = useState(-500);
+  const [content2, setContent2] = useState(-500);
+  const [content3, setContent3] = useState(-500);
+  const [content4, setContent4] = useState(-500);
+  const [content5, setContent5] = useState(-500);
+
+  const sliders = () => {
+    const position = window.scrollY;
+    console.log(position);
+    if (position >= 120) {
+      setContent1(0);
+    }
+    if (position >= 400) {
+      setContent2(0);
+    }
+    if (position >= 700) {
+      setContent3(0);
+    }
+    if (position >= 1000) {
+      setContent4(0);
+    }
+    if (position >= 1250) {
+      setContent5(0);
+    }
+  };
+
+  window.addEventListener("scroll", sliders);
   return (
     <>
       <div className=" font-comic flex justify-between p-3 bg-slate-200">
@@ -29,7 +59,10 @@ const LatestProject = () => {
         </div>
       </div>
       <div className=" bg-slate-200 flex flex-col justify-center pb-5">
-        <div className="">
+        <div
+          className=" transition-all"
+          style={{ transform: `translate(${content1}px` }}
+        >
           <div className=" flex justify-center p-3">
             <div className=" bg-wa w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
@@ -51,7 +84,10 @@ const LatestProject = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div
+          className=" transition-all"
+          style={{ transform: `translate(${content2}px` }}
+        >
           <div className=" flex justify-center p-3">
             <div className=" bg-books w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
@@ -73,7 +109,10 @@ const LatestProject = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div
+          className=" transition-all"
+          style={{ transform: `translate(${content3}px` }}
+        >
           <div className=" flex justify-center p-3">
             <div className=" bg-spotipeq w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
@@ -95,7 +134,10 @@ const LatestProject = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div
+          className=" transition-all"
+          style={{ transform: `translate(${content4}px` }}
+        >
           <div className=" flex justify-center p-3">
             <div className=" bg-todo w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
@@ -117,7 +159,10 @@ const LatestProject = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div
+          className=" transition-all"
+          style={{ transform: `translate(${content5}px` }}
+        >
           <div className=" flex justify-center p-3">
             <div className=" bg-dstore w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">

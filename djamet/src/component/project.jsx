@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import HeaderProject from "./headerProject";
-import ProjectList from "./projectlist";
 import Header from "./Header";
 import Sidebar from "./sidebar";
 import LatestProject from "./latestproject";

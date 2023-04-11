@@ -38,7 +38,7 @@ const MyPortofolio = () => {
           <p>I am fullstack developer</p>
         </div>
         <div>
-          <button className=" text-white bg-orange-500 font-jost p-2 rounded-xl">
+          <button className=" animate-pulse text-white bg-orange-500 font-jost p-2 rounded-xl">
             Hire Me
           </button>
         </div>

@@ -1,6 +1,19 @@
+import { useState } from "react";
+
 const Skills = () => {
+  const [skill, setSkill] = useState(-500);
+  const skillsShow = () => {
+    const position = window.scrollY;
+    if (position >= 20) {
+      setSkill(0);
+    }
+  };
+  window.addEventListener("scroll", skillsShow);
   return (
-    <div className=" flex flex-col gap-2 h-36 justify-center">
+    <div
+      style={{ transform: `translate(${skill}px, ${0}px)` }}
+      className=" flex flex-col gap-2 h-36 justify-center transition-all"
+    >
       <div className=" flex justify-start gap-2">
         <p className=" bg-yellow-400 p-2 font-comic rounded-lg text-base">
           Javascript

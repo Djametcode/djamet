@@ -7,7 +7,7 @@ const Contact = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className=" bg-polygon text-white/30 font-jost sm:hidden h-screen">
+    <div className=" bg-slate-200 text-white/30 font-jost sm:hidden h-screen">
       <div className=" sticky top-0">
         <Header setToggle={setToggle} />
       </div>
