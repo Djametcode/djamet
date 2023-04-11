@@ -102,7 +102,7 @@ const LatestProject = () => {
             <div className=" flex flex-col justify-center">
               <a
                 className=" bg-slate-500 rounded-lg p-1 text-white"
-                href="https://wacl0ne.netlify.app/"
+                href="https://b0oksmanager.netlify.app"
               >
                 Click Here
               </a>
@@ -127,7 +127,7 @@ const LatestProject = () => {
             <div className=" flex flex-col justify-center">
               <a
                 className=" bg-slate-500 rounded-lg p-1 text-white"
-                href="https://wacl0ne.netlify.app/"
+                href="https://spotipeq.netlify.app"
               >
                 Click Here
               </a>
@@ -147,12 +147,12 @@ const LatestProject = () => {
           </div>
           <div className=" flex font-comic gap-2 justify-center">
             <div className=" flex flex-col justify-center">
-              <p className=" text-lg">Whatsapp Clone</p>
+              <p className=" text-lg">Todos App</p>
             </div>
             <div className=" flex flex-col justify-center">
               <a
                 className=" bg-slate-500 rounded-lg p-1 text-white"
-                href="https://wacl0ne.netlify.app/"
+                href="https://spotipeq.netlify.app"
               >
                 Click Here
               </a>
@@ -177,7 +177,7 @@ const LatestProject = () => {
             <div className=" flex flex-col justify-center">
               <a
                 className=" bg-slate-500 rounded-lg p-1 text-white"
-                href="https://wacl0ne.netlify.app/"
+                href="https://digital-stores.vercel.app/"
               >
                 Click Here
               </a>
