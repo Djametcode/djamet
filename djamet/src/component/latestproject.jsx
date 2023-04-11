@@ -28,7 +28,7 @@ const LatestProject = () => {
           <div>{icons[0].icons}</div>
         </div>
       </div>
-      <div className=" bg-slate-200 flex flex-col justify-center">
+      <div className=" bg-slate-200 flex flex-col justify-center pb-5">
         <div className="">
           <div className=" flex justify-center p-3">
             <div className=" bg-wa w-60 h-60 bg-cover rounded-2xl relative">
@@ -37,8 +37,18 @@ const LatestProject = () => {
               </div>
             </div>
           </div>
-          <div className=" flex font-comic justify-center">
-            <p className=" text-lg">Whatsapp Clone</p>
+          <div className=" flex font-comic gap-2 justify-center">
+            <div className=" flex flex-col justify-center">
+              <p className=" text-lg">Whatsapp Clone</p>
+            </div>
+            <div className=" flex flex-col justify-center">
+              <a
+                className=" bg-slate-500 rounded-lg p-1 text-white"
+                href="https://wacl0ne.netlify.app/"
+              >
+                Click Here
+              </a>
+            </div>
           </div>
         </div>
         <div className="">
@@ -49,8 +59,18 @@ const LatestProject = () => {
               </div>
             </div>
           </div>
-          <div className=" flex font-comic justify-center">
-            <p className=" text-lg">Books Saver</p>
+          <div className=" flex font-comic gap-2 justify-center">
+            <div className=" flex flex-col justify-center">
+              <p className=" text-lg">Books Saver</p>
+            </div>
+            <div className=" flex flex-col justify-center">
+              <a
+                className=" bg-slate-500 rounded-lg p-1 text-white"
+                href="https://wacl0ne.netlify.app/"
+              >
+                Click Here
+              </a>
+            </div>
           </div>
         </div>
         <div className="">
@@ -61,8 +81,18 @@ const LatestProject = () => {
               </div>
             </div>
           </div>
-          <div className=" flex font-comic justify-center">
-            <p className=" text-lg">SpotipeQ</p>
+          <div className=" flex font-comic gap-2 justify-center">
+            <div className=" flex flex-col justify-center">
+              <p className=" text-lg">SpotipeQ</p>
+            </div>
+            <div className=" flex flex-col justify-center">
+              <a
+                className=" bg-slate-500 rounded-lg p-1 text-white"
+                href="https://wacl0ne.netlify.app/"
+              >
+                Click Here
+              </a>
+            </div>
           </div>
         </div>
         <div className="">
@@ -73,8 +103,18 @@ const LatestProject = () => {
               </div>
             </div>
           </div>
-          <div className=" flex font-comic justify-center">
-            <p className=" text-lg">Whatsapp Clone</p>
+          <div className=" flex font-comic gap-2 justify-center">
+            <div className=" flex flex-col justify-center">
+              <p className=" text-lg">Whatsapp Clone</p>
+            </div>
+            <div className=" flex flex-col justify-center">
+              <a
+                className=" bg-slate-500 rounded-lg p-1 text-white"
+                href="https://wacl0ne.netlify.app/"
+              >
+                Click Here
+              </a>
+            </div>
           </div>
         </div>
         <div className="">
@@ -85,8 +125,18 @@ const LatestProject = () => {
               </div>
             </div>
           </div>
-          <div className=" flex font-comic justify-center">
-            <p className=" text-lg">Digital Store</p>
+          <div className=" flex font-comic gap-2 justify-center">
+            <div className=" flex flex-col justify-center">
+              <p className=" text-lg">Digital Stores</p>
+            </div>
+            <div className=" flex flex-col justify-center">
+              <a
+                className=" bg-slate-500 rounded-lg p-1 text-white"
+                href="https://wacl0ne.netlify.app/"
+              >
+                Click Here
+              </a>
+            </div>
           </div>
         </div>
       </div>

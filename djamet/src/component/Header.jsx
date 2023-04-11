@@ -105,7 +105,7 @@ const Header = ({ setToggle }) => {
   return (
     <div
       style={{ backgroundColor: `${headerBg}` }}
-      className=" font-jost text-black p-1 z-20 flex justify-around"
+      className=" font-jost text-black z-20 flex justify-around"
     >
       <div
         onClick={changeIcon}

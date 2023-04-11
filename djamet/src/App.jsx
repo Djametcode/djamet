@@ -5,6 +5,7 @@ import Sidebar from "./component/sidebar";
 import Introduce from "./component/introduce";
 import Skills from "./component/skills";
 import LatestProject from "./component/latestproject";
+import Footer from "./component/footer";
 
 const MyPortofolio = () => {
   const [toggle, setToggle] = useState(false);
@@ -25,9 +26,12 @@ const MyPortofolio = () => {
       </div>
       <div className=" p-3 bg-slate-200 flex flex-col gap-3 relative z-0">
         <div>
-          <p className=" font-quick text-2xl">My Name</p>
-          <p className=" font-quick text-2xl">
-            is <span className=" font-mono text-3xl font-extrabold">Tofik</span>
+          <p className=" font-quick text-xl">My Name</p>
+          <p className=" font-quick text-xl">
+            is &nbsp;
+            <span className=" font-quick underline text-3xl font-extrabold">
+              Tofik
+            </span>
           </p>
         </div>
         <div className=" font-mono text-base">
@@ -44,6 +48,9 @@ const MyPortofolio = () => {
       </div>
       <div>
         <LatestProject />
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );
