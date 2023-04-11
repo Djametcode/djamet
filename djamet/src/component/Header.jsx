@@ -93,15 +93,20 @@ const Header = ({ setToggle }) => {
   };
 
   return (
-    <div className=" bg-polygon font-jost text-white/30 sticky p-1 top-0 z-20 flex justify-between">
-      <div className=" flex flex-col justify-center">
-        <h1 className=" text-3xl p-4 text-center">Djamet Coder</h1>
-      </div>
+    <div className=" bg-transparent font-jost text-black sticky p-1 top-0 z-20 flex justify-around">
       <div
         onClick={changeIcon}
-        className=" flex flex-col justify-center -translate-x-6 cursor-pointer fill-current z-40"
+        className=" flex flex-col justify-center cursor-pointer fill-current z-40"
       >
         <div>{icon[index].icons}</div>
+      </div>
+      <div className=" flex flex-col justify-center">
+        <h1 className=" text-2xl p-4 text-center">Djamet Coder</h1>
+      </div>
+      <div className=" flex flex-col justify-center text-xl">
+        <a className=" bg-slate-600 p-2 rounded-xl text-slate-500" href="#">
+          Contact Me
+        </a>
       </div>
     </div>
   );
