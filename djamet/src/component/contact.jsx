@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import ContactCard from "./contactCard";
-import Header, { Navbar } from "./Header";
+import Header from "./Header";
 import Sidebar from "./sidebar";
 
 const Contact = () => {

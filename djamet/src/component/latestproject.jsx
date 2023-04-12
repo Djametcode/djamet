@@ -51,8 +51,8 @@ const LatestProject = () => {
   return (
     <>
       <div className=" font-comic flex justify-between p-3 bg-slate-200">
-        <div className=" flex flex-col justify-center">
-          <p className=" text-xl">Latest Project</p>
+        <div className=" flex flex-col justify-center md:pl-60">
+          <p className=" text-xl md:text-4xl">Latest Project</p>
         </div>
         <div>
           <div>{icons[0].icons}</div>

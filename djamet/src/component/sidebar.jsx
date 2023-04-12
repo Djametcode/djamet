@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Sidebar = ({ setToggle }) => {
   const closeSideBar = () => {
     setToggle(false);
   };
+
   return (
-    <div className=" bg-slate-300 bg-scroll fixed top-0 w-72 p-3 rounded-tr-3xl rounded-br-3xl h-screen z-50">
+    <div
+      style={{ height: "90%" }}
+      className=" delay-300 transition-all bg-slate-300 bg-scroll fixed bottom-0 w-screen p-3 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl z-50"
+    >
       {/* <div className=" flex justify-start p-2">
         <div className=" bg-profile w-16 h-16 rounded-full bg-cover"></div>
       </div> */}
-      <div className=" flex justify-start text-lg">
+      <div className="flex justify-start text-lg">
         <div className=" flex font-jost flex-col gap-2 text-white/80 p-3">
           <Link className=" bg-slate-600 rounded-xl text-center p-2" to="/">
             Beranda

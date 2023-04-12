@@ -1,46 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Beranda = () => {
-  return (
-    <div className=" w-full m-0 bg-slate-600/30 rounded-lg">
-      <Link className=" block p-3" to={"/"}>
-        Beranda{" "}
-      </Link>
-    </div>
-  );
-};
-
-const Project = () => {
-  return (
-    <div className=" w-full m-0 bg-slate-600/30 rounded-lg">
-      <Link className=" block p-3" to={"/project"}>
-        Project{" "}
-      </Link>
-    </div>
-  );
-};
-
-const Contact = () => {
-  return (
-    <div className=" w-full m-0 bg-slate-600/30 rounded-lg">
-      <Link className=" block p-3" to={"/contact"}>
-        Contact Me{" "}
-      </Link>
-    </div>
-  );
-};
-
-export const Navbar = () => {
-  return (
-    <div className="ml-2 mr-2 flex flex-row gap-2 justify-center text-center font-jost pb-2">
-      <Beranda />
-      <Project />
-      <Contact />
-    </div>
-  );
-};
-
 const Header = ({ setToggle }) => {
   const icon = [
     {
@@ -105,16 +65,23 @@ const Header = ({ setToggle }) => {
   return (
     <div
       style={{ backgroundColor: `${headerBg}` }}
-      className=" font-jost text-black z-20 flex justify-around"
+      className=" pr-2 pl-2 font-jost text-black z-20 flex justify-between md:justify-around md:p-5"
     >
+      <div className=" flex flex-col justify-center">
+        <div className=" max-md:hidden flex text-2xl gap-4">
+          <Link to="/">About Me</Link>
+          <Link to="/">Portofolio</Link>
+          <Link to="/">Cooperation</Link>
+        </div>
+      </div>
       <div
         onClick={changeIcon}
-        className=" flex flex-col justify-center cursor-pointer fill-current z-40"
+        className=" md:hidden flex flex-col justify-center cursor-pointer fill-current z-40"
       >
         <div>{icon[index].icons}</div>
       </div>
       <div className=" flex flex-col justify-center">
-        <h1 className=" text-2xl p-4 text-center">Djamet Coder</h1>
+        <h1 className=" text-2xl p-4 text-center md:hidden">Djamet Coder</h1>
       </div>
       <div className=" flex flex-col justify-center text-xl">
         <a
