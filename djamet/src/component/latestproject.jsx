@@ -189,7 +189,7 @@ const LatestProject = () => {
           style={{ transform: `translate(${content5}px` }}
         >
           <div className=" flex justify-center p-3">
-            <div className=" bg-dstore w-60 h-60 bg-cover rounded-2xl relative">
+            <div className=" bg-postingAja w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
                 <p>06</p>
               </div>
