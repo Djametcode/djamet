@@ -1,16 +1,14 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Sidebar = ({ setToggle }) => {
+const Sidebar = ({ setToggle, setTrans }) => {
   const closeSideBar = () => {
     setToggle(false);
+    setTrans(0);
   };
 
   return (
-    <div
-      style={{ height: "90%" }}
-      className=" delay-300 transition-all bg-slate-300 bg-scroll fixed bottom-0 w-screen p-3 rounded-tl-3xl rounded-tr-3xl rounded-br-3xl z-50"
-    >
+    <div className=" transition-all fixed top-0 left-0 bg-slate-300 w-72 h-screen p-3 z-50">
       {/* <div className=" flex justify-start p-2">
         <div className=" bg-profile w-16 h-16 rounded-full bg-cover"></div>
       </div> */}
