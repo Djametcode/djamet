@@ -8,12 +8,14 @@ const List = () => {
 };
 
 const Project = () => {
-  const [toggle, setToggle] = useState(false);
+  const [display, setDisplay] = useState("none");
   return (
     <div className=" sm:hidden">
-      {toggle && <Sidebar setToggle={setToggle} />}
       <div className=" sticky top-0 z-40 bg-slate-200">
-        <Header setToggle={setToggle} />
+        <Header setDisplay={setDisplay} />
+      </div>
+      <div style={{ display: `${display}` }} className=" fixed top-0 z-40">
+        <Sidebar setDisplay={setDisplay} />
       </div>
       <List />
     </div>

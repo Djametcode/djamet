@@ -1,7 +1,7 @@
 import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Header = ({ setToggle, setTrans }) => {
+const Header = ({ setDisplay, setTrans }) => {
   const icon = [
     {
       icons: (
@@ -46,11 +46,9 @@ const Header = ({ setToggle, setTrans }) => {
     setIndex(newIndex);
 
     if (isStart) {
-      setToggle(true);
-      setTrans(200);
+      setDisplay("block");
     } else {
-      setToggle(false);
-      setTrans(0);
+      setDisplay("none");
     }
   };
 
