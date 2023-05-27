@@ -25,6 +25,8 @@ module.exports = {
         intro:
           "url('./image/5f17e435-4aa1-46ac-b6f0-6e77e687a41c-removebg-preview.png')",
         bgcover: "url('./image/blob.svg')",
+        profileNew:
+          "url('./image/photo_6298379341708506636_y__1_-removebg.png')",
       },
     },
   },

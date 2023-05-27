@@ -17,31 +17,43 @@ const MyPortofolio = () => {
       <div className=" fixed top-0 z-40" style={{ display: `${display}` }}>
         <Sidebar setDisplay={setDisplay} />
       </div>
-      <div className=" bg-bgcover bg-no-repeat bg-center md:translate-x-56 md:translate-y-32 flex justify-center relative z-10">
-        <div className=" w-72 h-72 md:h-96 md:w-96 md:scale-150 rounded-full bg-intro bg-no-repeat bg-center"></div>
-      </div>
-      <div className=" p-3 bg-slate-200 flex md:pl-60 md:-translate-y-56 md:translate-x-72 flex-col gap-3 relative z-0">
-        <div>
-          <p className=" font-quick text-xl md:text-7xl">My Name</p>
-          <p className=" font-quick text-xl md:text-7xl">
-            is &nbsp;
-            <span className=" font-quick underline text-3xl md:text-6xl font-extrabold">
-              Tofik
-            </span>
-          </p>
+
+      <div className=" bg-slate-200 flex flex-col gap-3 relative z-0">
+        <div className=" max-sm:flex-col flex p-3 justify-center h-[500px] max-sm:pt-28 max-sm:pb-36">
+          <div
+            className=" bg-bgcover bg-center bg-no-repeat flex flex-col justify-center
+          "
+          >
+            <div className=" flex justify-center">
+              <img
+                className=" w-96 h-96 rounded-full"
+                src="./src/image/photo_6298379341708506636_y__1_-removebg.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className=" flex flex-col justify-center pl-10 max-sm:pl-0">
+            <p className=" font-quick text-xl md:text-7xl">My Name</p>
+            <p className=" font-quick text-xl md:text-7xl">
+              is &nbsp;
+              <span className=" font-quick underline text-3xl md:text-6xl font-extrabold">
+                Tofik
+              </span>
+            </p>
+            <div className=" font-mono text-base pt-3">
+              <p>I am fullstack developer</p>
+            </div>
+            <div className=" p-3">
+              <button className=" animate-pulse text-white bg-orange-500 font-jost p-2 rounded-xl">
+                Hire Me
+              </button>
+            </div>
+          </div>
         </div>
-        <div className=" font-mono text-base">
-          <p>I am fullstack developer</p>
-        </div>
-        <div>
-          <button className=" animate-pulse text-white bg-orange-500 font-jost p-2 rounded-xl">
-            Hire Me
-          </button>
-        </div>
-        <div className=" rounded-lg md:-translate-y-60 md:translate-x-72 md:pl-7 md:bg-slate-200 bg-slate-300 p-3">
+        <div className=" rounded-lg md:bg-slate-200 bg-slate-300 p-3 m-3">
           <Skills />
         </div>
-        <div className=" md:-translate-y-56">
+        <div>
           <LatestProject />
         </div>
         <div>

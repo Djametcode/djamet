@@ -1,7 +1,7 @@
 const Introduce = () => {
   return (
     <div>
-      <div className=" bg-intro h-60 w-screen"></div>
+      <div className=" bg-intro"></div>
     </div>
   );
 };

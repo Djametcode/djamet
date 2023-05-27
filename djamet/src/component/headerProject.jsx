@@ -94,7 +94,7 @@ const HeaderProject = ({ setToggle }) => {
       </div>
       <div
         onClick={changeIcon}
-        className=" flex flex-col justify-center -translate-x-6 cursor-pointer fill-current"
+        className=" flex flex-col justify-center cursor-pointer fill-current"
       >
         <div>{icon[index].icons}</div>
       </div>

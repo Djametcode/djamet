@@ -65,7 +65,7 @@ const Header = ({ setDisplay, setTrans }) => {
   return (
     <div
       style={{ backgroundColor: `${headerBg}` }}
-      className=" pr-2 pl-2 font-jost text-black z-20 flex justify-between md:justify-around md:p-5"
+      className=" md:bg-slate-500 pr-2 pl-2 font-jost text-black z-20 flex justify-between md:justify-around h-24 max-sm:h-16"
     >
       <div className=" flex flex-col justify-center">
         <div className=" max-md:hidden flex text-2xl gap-4">
