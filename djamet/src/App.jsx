@@ -25,11 +25,7 @@ const MyPortofolio = () => {
           "
           >
             <div className=" flex justify-center">
-              <img
-                className=" w-96 h-96 rounded-full"
-                src="./public/bg1.png"
-                alt=""
-              />
+              <img className=" w-96 h-96 rounded-full" src="/bg1.png" alt="" />
             </div>
           </div>
           <div className=" flex flex-col justify-center pl-10 max-sm:pl-0">
