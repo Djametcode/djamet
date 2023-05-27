@@ -21,11 +21,11 @@ const LatestProject = () => {
     },
   ];
 
-  const [content1, setContent1] = useState(-500);
-  const [content2, setContent2] = useState(-500);
-  const [content3, setContent3] = useState(-500);
-  const [content4, setContent4] = useState(-500);
-  const [content5, setContent5] = useState(-500);
+  // const [content1, setContent1] = useState(-500);
+  // const [content2, setContent2] = useState(-500);
+  // const [content3, setContent3] = useState(-500);
+  // const [content4, setContent4] = useState(-500);
+  // const [content5, setContent5] = useState(-500);
 
   const sliders = () => {
     const position = window.scrollY;
@@ -61,7 +61,7 @@ const LatestProject = () => {
       <div className=" bg-slate-200 flex justify-center pb-5 pt-10 overflow-scroll max-sm:flex-col">
         <div
           className=" transition-all"
-          style={{ transform: `translate(${content1}px` }}
+          // style={{ transform: `translate(${content1}px` }}
         >
           <div className=" flex justify-center p-3">
             <div className=" bg-wa w-60 h-60 bg-cover rounded-2xl relative">
@@ -86,7 +86,7 @@ const LatestProject = () => {
         </div>
         <div
           className=" transition-all"
-          style={{ transform: `translate(${content2}px` }}
+          // style={{ transform: `translate(${content2}px` }}
         >
           <div className=" flex justify-center p-3">
             <div className=" bg-books w-60 h-60 bg-cover rounded-2xl relative">
@@ -111,7 +111,7 @@ const LatestProject = () => {
         </div>
         <div
           className=" transition-all"
-          style={{ transform: `translate(${content3}px` }}
+          // style={{ transform: `translate(${content3}px` }}
         >
           <div className=" flex justify-center p-3">
             <div className=" bg-spotipeq w-60 h-60 bg-cover rounded-2xl relative">
@@ -136,7 +136,7 @@ const LatestProject = () => {
         </div>
         <div
           className=" transition-all"
-          style={{ transform: `translate(${content4}px` }}
+          // style={{ transform: `translate(${content4}px` }}
         >
           <div className=" flex justify-center p-3">
             <div className=" bg-todo w-60 h-60 bg-cover rounded-2xl relative">
@@ -161,7 +161,7 @@ const LatestProject = () => {
         </div>
         <div
           className=" transition-all"
-          style={{ transform: `translate(${content5}px` }}
+          // style={{ transform: `translate(${content5}px` }}
         >
           <div className=" flex justify-center p-3">
             <div className=" bg-dstore w-60 h-60 bg-cover rounded-2xl relative">
@@ -186,7 +186,7 @@ const LatestProject = () => {
         </div>
         <div
           className=" transition-all"
-          style={{ transform: `translate(${content5}px` }}
+          // style={{ transform: `translate(${content5}px` }}
         >
           <div className=" flex justify-center p-3">
             <div className=" bg-postingAja w-60 h-60 bg-cover rounded-2xl relative">
