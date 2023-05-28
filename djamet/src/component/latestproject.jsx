@@ -27,27 +27,27 @@ const LatestProject = () => {
   // const [content4, setContent4] = useState(-500);
   // const [content5, setContent5] = useState(-500);
 
-  const sliders = () => {
-    const position = window.scrollY;
-    console.log(position);
-    if (position >= 120) {
-      setContent1(0);
-    }
-    if (position >= 400) {
-      setContent2(0);
-    }
-    if (position >= 700) {
-      setContent3(0);
-    }
-    if (position >= 1000) {
-      setContent4(0);
-    }
-    if (position >= 1250) {
-      setContent5(0);
-    }
-  };
+  // const sliders = () => {
+  //   const position = window.scrollY;
+  //   console.log(position);
+  //   if (position >= 120) {
+  //     setContent1(0);
+  //   }
+  //   if (position >= 400) {
+  //     setContent2(0);
+  //   }
+  //   if (position >= 700) {
+  //     setContent3(0);
+  //   }
+  //   if (position >= 1000) {
+  //     setContent4(0);
+  //   }
+  //   if (position >= 1250) {
+  //     setContent5(0);
+  //   }
+  // };
 
-  window.addEventListener("scroll", sliders);
+  // window.addEventListener("scroll", sliders);
   return (
     <>
       <div className=" bg-lime-500 font-comic flex justify-between pl-28 pr-28 max-sm:pl-5 max-sm:pr-5 h-24 text-white max-sm:h-16">
@@ -184,10 +184,7 @@ const LatestProject = () => {
             </div>
           </div>
         </div>
-        <div
-          className=" transition-all"
-          // style={{ transform: `translate(${content5}px` }}
-        >
+        <div className=" transition-all">
           <div className=" flex justify-center p-3">
             <div className=" bg-postingAja w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
