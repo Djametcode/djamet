@@ -6,7 +6,6 @@ import Introduce from "./component/introduce";
 import Skills from "./component/skills";
 import LatestProject from "./component/latestproject";
 import Footer from "./component/footer";
-
 const MyPortofolio = () => {
   const [display, setDisplay] = useState("none");
   return (
