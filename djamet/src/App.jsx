@@ -9,7 +9,7 @@ import Footer from "./component/footer";
 const MyPortofolio = () => {
   const [display, setDisplay] = useState("none");
   return (
-    <div className=" bg-slate-200 w-screen transition-all">
+    <div className=" md:bg-bg2 lg:bg-cover max-sm:bg-bg2 w-screen h-full max-sm:pb-16 transition-all">
       <div className=" sticky z-30 top-0 w-screen transition-opacity">
         <Header setDisplay={setDisplay} />
       </div>
@@ -17,21 +17,21 @@ const MyPortofolio = () => {
         <Sidebar setDisplay={setDisplay} />
       </div>
 
-      <div className=" bg-slate-200 flex flex-col gap-3 relative z-0">
-        <div className=" max-sm:flex-col flex p-3 justify-center h-[500px] max-sm:pt-28 max-sm:pb-36">
+      <div className=" flex flex-col gap-3 relative z-0">
+        <div className=" max-sm:flex-col flex p-3 justify-center">
           <div
             className=" bg-bgcover bg-center bg-no-repeat flex flex-col justify-center
           "
           >
             <div className=" flex justify-center">
               <img
-                className=" object-cover w-96 h-96 rounded-full"
+                className=" object-cover max-sm:w-96 max-sm:h-96 w-[600px] h-[600px] rounded-full"
                 src="/bg1.png"
                 alt=""
               />
             </div>
           </div>
-          <div className=" flex flex-col justify-center pl-10 max-sm:pl-0">
+          <div className=" flex flex-col justify-center pl-10 max-sm:pl-0 text-white">
             <p className=" font-quick text-xl md:text-7xl">My Name</p>
             <p className=" font-quick text-xl md:text-7xl">
               is &nbsp;
@@ -42,20 +42,20 @@ const MyPortofolio = () => {
             <div className=" font-mono text-base pt-3">
               <p>I am fullstack developer</p>
             </div>
-            <div className=" p-3">
+            <div className=" pt-3">
               <button className=" animate-pulse text-white bg-orange-500 font-jost p-2 rounded-xl">
                 Hire Me
               </button>
             </div>
           </div>
         </div>
-        <div className=" rounded-lg md:bg-slate-200 bg-slate-300 p-3 m-3">
+        <div className=" rounded-lg p-3">
           <Skills />
         </div>
-        <div>
+        <div className=" bg-slate-100">
           <LatestProject />
         </div>
-        <div>
+        <div className=" fixed bottom-0 w-full">
           <Footer />
         </div>
       </div>

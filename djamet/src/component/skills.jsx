@@ -11,23 +11,20 @@ const Skills = () => {
   };
   window.addEventListener("scroll", skillsShow);
   return (
-    <div
-      // style={{ transform: `translate(${skill}px, ${0}px)` }}
-      className=" flex justify-center transition-all gap-3 max-sm:flex-col"
-    >
+    <div className=" flex justify-center transition-all gap-3 max-sm:flex-col">
       <div className=" flex justify-start gap-2">
         <motion.div whileTap={{ scale: 1.2 }}>
-          <p className=" bg-yellow-400 p-2 font-comic rounded-lg text-base">
+          <p className=" bg-yellow-400 p-2 font-comic rounded-lg text-white">
             Javascript
           </p>
         </motion.div>
         <motion.div whileTap={{ scale: 1.2 }}>
-          <p className=" bg-cyan-500 p-2 font-comic rounded-lg text-base">
+          <p className=" bg-cyan-500 p-2 font-comic rounded-lg text-white">
             React
           </p>
         </motion.div>
         <motion.div whileTap={{ scale: 1.2 }}>
-          <p className=" bg-cyan-600 p-2 font-comic rounded-lg text-base">
+          <p className=" bg-cyan-600 p-2 font-comic rounded-lg text-white">
             TailwindCSS
           </p>
         </motion.div>
@@ -44,7 +41,7 @@ const Skills = () => {
         </p>
       </div>
       <div className=" flex justify-start gap-2">
-        <p className=" bg-orange-400 p-2 font-comic rounded-lg text-base">
+        <p className=" bg-orange-400 p-2 font-comic rounded-lg text-white">
           GIT
         </p>
         <p className=" bg-indigo-400 p-2 font-comic text-base rounded-lg text-white">

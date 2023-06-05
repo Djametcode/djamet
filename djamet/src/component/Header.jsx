@@ -56,7 +56,7 @@ const Header = ({ setDisplay, setTrans }) => {
   const changeBg = () => {
     const position = window.scrollY;
     if (position >= 20) {
-      setBg("slateGrey");
+      setBg("./src/image/bg.svg");
     } else {
       setBg("");
     }
@@ -64,11 +64,11 @@ const Header = ({ setDisplay, setTrans }) => {
   window.addEventListener("scroll", changeBg);
   return (
     <div
-      style={{ backgroundColor: `${headerBg}` }}
-      className=" md:bg-slate-500 pr-2 pl-2 font-jost text-black z-20 flex justify-between md:justify-around h-24 max-sm:h-16"
+      style={{ backgroundImage: `url('/${headerBg}')` }}
+      className=" pr-2 pl-2 font-jost text-white z-20 flex justify-between md:justify-around h-16 max-sm:h-16"
     >
       <div className=" flex flex-col justify-center">
-        <div className=" max-md:hidden flex text-2xl gap-4">
+        <div className=" max-md:hidden flex text-lg gap-4">
           <Link to="/">About Me</Link>
           <Link to="/">Portofolio</Link>
           <Link to="/">Cooperation</Link>

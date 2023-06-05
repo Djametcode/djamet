@@ -50,19 +50,16 @@ const LatestProject = () => {
   // window.addEventListener("scroll", sliders);
   return (
     <>
-      <div className=" bg-lime-500 font-comic flex justify-between pl-28 pr-28 max-sm:pl-5 max-sm:pr-5 h-24 text-white max-sm:h-16">
+      <div className=" bg-lime-500 font-comic flex justify-between pl-28 pr-28 max-sm:pl-5 max-sm:pr-5 h-16 text-white max-sm:h-16">
         <div className=" flex flex-col justify-center">
-          <p className=" text-xl md:text-4xl">Latest Project</p>
+          <p className=" text-lg md:text-xl">Latest Project</p>
         </div>
         <div className=" flex flex-col justify-center">
           <div>{icons[0].icons}</div>
         </div>
       </div>
-      <div className=" bg-slate-200 flex justify-center pb-5 pt-10 overflow-scroll max-sm:flex-col">
-        <div
-          className=" transition-all"
-          // style={{ transform: `translate(${content1}px` }}
-        >
+      <div className=" flex justify-center pb-5 pt-10 overflow-scroll max-sm:flex-col">
+        <div className=" transition-all">
           <div className=" flex justify-center p-3">
             <div className=" bg-wa w-60 h-60 bg-cover rounded-2xl relative">
               <div className=" bg-black text-white p-4 rounded-xl w-14 text-center font-mono absolute -bottom-2 -right-2">
