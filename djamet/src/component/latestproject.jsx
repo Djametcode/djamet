@@ -21,36 +21,9 @@ const LatestProject = () => {
     },
   ];
 
-  // const [content1, setContent1] = useState(-500);
-  // const [content2, setContent2] = useState(-500);
-  // const [content3, setContent3] = useState(-500);
-  // const [content4, setContent4] = useState(-500);
-  // const [content5, setContent5] = useState(-500);
-
-  // const sliders = () => {
-  //   const position = window.scrollY;
-  //   console.log(position);
-  //   if (position >= 120) {
-  //     setContent1(0);
-  //   }
-  //   if (position >= 400) {
-  //     setContent2(0);
-  //   }
-  //   if (position >= 700) {
-  //     setContent3(0);
-  //   }
-  //   if (position >= 1000) {
-  //     setContent4(0);
-  //   }
-  //   if (position >= 1250) {
-  //     setContent5(0);
-  //   }
-  // };
-
-  // window.addEventListener("scroll", sliders);
   return (
     <>
-      <div className=" bg-lime-500 font-comic flex justify-between pl-28 pr-28 max-sm:pl-5 max-sm:pr-5 h-16 text-white max-sm:h-16">
+      <div className=" bg-bg3 bg-cover font-comic flex justify-between pl-28 pr-28 max-sm:pl-5 max-sm:pr-5 h-16 text-white max-sm:h-16">
         <div className=" flex flex-col justify-center">
           <p className=" text-lg md:text-xl">Latest Project</p>
         </div>
@@ -58,7 +31,7 @@ const LatestProject = () => {
           <div>{icons[0].icons}</div>
         </div>
       </div>
-      <div className=" flex justify-center pb-5 pt-10 overflow-scroll max-sm:flex-col">
+      <div className=" bg-bg3 bg-cover flex justify-center pb-16 pt-10 overflow-scroll max-sm:flex-col">
         <div className=" transition-all">
           <div className=" flex justify-center p-3">
             <div className=" bg-wa w-60 h-60 bg-cover rounded-2xl relative">

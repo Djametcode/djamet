@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         bg: "url('./image/bg.svg')",
         bg2: "url('/bg2.svg')",
+        bg3: "url('/bg3.svg')",
         polygon: "url('./image/polygon-scatter-haikei.svg')",
         blob: "url('./image/blob-haikei.svg')",
         scatter: "url('./image/circle-scatter-haikei.svg')",

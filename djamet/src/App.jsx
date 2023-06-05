@@ -9,7 +9,7 @@ import Footer from "./component/footer";
 const MyPortofolio = () => {
   const [display, setDisplay] = useState("none");
   return (
-    <div className=" md:bg-bg2 lg:bg-cover max-sm:bg-bg2 w-screen h-full max-sm:pb-16 transition-all">
+    <div className=" bg-bg3 bg-cover w-screen h-full transition-all">
       <div className=" sticky z-30 top-0 w-screen transition-opacity">
         <Header setDisplay={setDisplay} />
       </div>
@@ -18,19 +18,7 @@ const MyPortofolio = () => {
       </div>
 
       <div className=" flex flex-col gap-3 relative z-0">
-        <div className=" max-sm:flex-col flex p-3 justify-center">
-          <div
-            className=" bg-bgcover bg-center bg-no-repeat flex flex-col justify-center
-          "
-          >
-            <div className=" flex justify-center">
-              <img
-                className=" object-cover max-sm:w-96 max-sm:h-96 w-[600px] h-[600px] rounded-full"
-                src="/bg1.png"
-                alt=""
-              />
-            </div>
-          </div>
+        <div className=" max-sm:flex-col flex p-3 justify-around">
           <div className=" flex flex-col justify-center pl-10 max-sm:pl-0 text-white">
             <p className=" font-quick text-xl md:text-7xl">My Name</p>
             <p className=" font-quick text-xl md:text-7xl">
@@ -48,7 +36,20 @@ const MyPortofolio = () => {
               </button>
             </div>
           </div>
+          <div
+            className=" bg-bgcover bg-center bg-no-repeat flex flex-col justify-center
+          "
+          >
+            <div className=" flex justify-center">
+              <img
+                className=" object-cover max-sm:w-96 max-sm:h-96 w-[500px] h-[500px] rounded-full"
+                src="/bg1.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
+
         <div className=" rounded-lg p-3">
           <Skills />
         </div>
